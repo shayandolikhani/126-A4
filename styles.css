@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: #FE5F55;
+}
+
+main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #F3EEC3;
+}
+
+.aside1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #F7E3AF;
+}
+
+.aside2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: #F3EEC3;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: #706C61;
+}
+
+.header-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.navitem {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-right: 1em;
+    cursor: pointer;
+    background-color: #FE8D85;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 300ms;
+
+}
+
+.navitem:hover {
+    background-color: white;
+
+}
+
+.navitem:hover a {
+    color: #FE5F55;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-flex-item {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 75%;
+}
+
+.footer-flex-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-flex-item a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 300%;
+    font-style: italic;
+    color: white;
+    margin-left: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: medium;
+    background-color: #B0D0D3;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    transition: all 300ms;
+    margin-top: -5px;
+    margin-bottom: 3px;
+}
+
+button:hover {
+    background-color: #89B9BD;
+    color: white;
+    cursor: pointer;
+}
+
+.aside1-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside2-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside1 img {
+    width: 50%;
+}
+
+.aside2 img {
+    width: 50%;
+}
+
+.asidename {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: -5%;
+
+}
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    color: #FE5F55;
+
+}
+
+.price span {
+    text-decoration: line-through;
+}
+
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-flex-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-flex-container img {
+    width: 50%;
+}
+
+.main-flex-container2 img {
+    width: 35%
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: -5px;
+}
+
+	
+#mobilemenu {
+	
+    display: none;
+      
+  }
+
+@media only screen and (max-width: 767px) {
+
+    .mymenu{
+	
+        display: none;
+        
+      }
+        
+     
+        
+      #mobilemenu {
+        
+        display: block;
+        
+      }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 100vh;
+    }
+
+    header {
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+    
+    main {
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
+    
+    .aside1 {
+        grid-column: 1/1;
+        grid-row: 3/4;
+    }
+    
+    .aside2 {
+        grid-column: 1/1;
+        grid-row: 4/5;
+    }
+    
+    footer {
+        grid-column: 1/1;
+        grid-row: 5/6;
+    }
+
+    aside .price {
+        margin-top: 5%;
+    }
+
+
+
+}

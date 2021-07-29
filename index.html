@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#mymenu").slicknav({
+
+                prependTo: "#mobilemenu"
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header-flex-container">
+            <h1 class=logo>SHOOZ <i class="fas fa-shoe-prints"></i></h1>
+
+            <nav id="mobilemenu"></nav>
+            <nav class = "mymenu" id = "mymenu">
+                <ul class="navbar">
+                    <li class="navitem"><a href="#">Featured</a></li>
+                    <li class="navitem"><a href="#">New Releases</a></li>
+                    <li class="navitem"><a href="#">Men</a></li>
+                    <li class="navitem"><a href="#">Women</a></li>
+                    <li class="navitem"><a href="#">Kids</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <h2>Featured Items</h2>
+
+            <div class="main-flex">
+                <div class="main-flex-container">
+                    <img src="nikemid77.webp" alt="Nike Blazer Mid '77 Infinite">
+                    <p class="name">Nike Blazer Mid '77 Infinite</p>
+                    <p class="price">$110</p>
+                    <button type="button">Shop Featured Nike</button>
+                </div>
+
+                <div class="main-flex-container2">
+                    <img src="adidasnmd.webp" alt="Adidas NMD_R1">
+                    <p class="name">Adidas NMD_R1</p>
+                    <p class="price">$140</p>
+                    <button type="button">Shop Featured Adidas</button>
+                </div>
+
+            </div>
+
+        </main>
+        <aside class="aside1">
+            <h2>Spring Sale</h2>
+            <div class="aside1-flex-container">
+                <img src="vans.webp" alt="Vans X Penn ComfyCush Slip-On">
+                <p class="asidename">Vans X Penn ComfyCush Slip-On</p>
+                <p class="price"><span>$90 </span>$60</p>
+                <button type="button">See More</button>
+            </div>
+        </aside>
+        <aside class="aside2">
+            <h2>New Releases</h2>
+            <div class="aside2-flex-container">
+                <img src="flyknit.webp" alt="Nike ZoomX Invincible Run Flyknit">
+                <p class="asidename">Nike ZoomX Invincible Run Flyknit</p>
+                <p class="price">$180</p>
+                <button type="button">See More</button>
+            </div>
+        </aside>
+
+
+        <footer class="footer-flex-container">
+            <ul class="footer-flex-item">
+                <h3>ABOUT SHOOZ</h3>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Purpose</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Affiliates</a></li>
+            </ul>
+            <ul class="footer-flex-item">
+                <h3>SUPPORT</h3>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Orders + Payments</a></li>
+                <li><a href="#">Returns + Exchanges</a></li>
+                <li><a href="#">Shipping</a></li>
+            </ul>
+            <ul class="footer-flex-item">
+                <h3>CONTACT</h3>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Order Status</a></li>
+            </ul>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
